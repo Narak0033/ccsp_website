@@ -60,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({
         </div>
 
         <Link href="/us">
-          <Button variant="ghost" className="bg-[#B22234]/60 w-40 h-full  p-4 rounded-full text-base">
+          <Button variant="ghost" className="bg-[#B22234]/60 w-40 h-full p-4 rounded-full text-base">
             Learn more <ChevronRightIcon />
           </Button>
         </Link>

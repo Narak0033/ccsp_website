@@ -18,6 +18,13 @@ export interface HeroSlide {
   title: string;
   description: string;
 }
+export interface Projects {
+  src: string;
+  tag: string;
+  readableDate: string;
+  title: string;
+  href: string;
+}
 
 // ------------------- Navigation Links -------------------
 export const NavLinks: NavLink[] = [
@@ -46,5 +53,32 @@ export const heroSlides: HeroSlide[] = [
     src: "/images/home/homepage2.png",
     title: "Community Impact",
     description: "Making a difference in our community",
+  },
+];
+
+export const projects: Projects[] = [
+  {
+    src: "/images/home/homepage1.png",
+    tag: "STEM",
+    readableDate: "3-4 Jan 2025",
+    title:
+      "Support Our Mission: STEM4Change: Together, We Can Improve Our Community Better!",
+    href: "/projects/stem",
+  },
+  {
+    src: "/images/home/homepage1.png",
+    tag: "STEM",
+    readableDate: "3-4 Jan 2025",
+    title:
+      "Support Our Mission: STEM4Change: Together, We Can Improve Our Community Better!",
+    href: "/projects/stem",
+  },
+  {
+    src: "/images/home/homepage1.png",
+    tag: "STEM",
+    readableDate: "3-4 Jan 2025",
+    title:
+      "Support Our Mission: STEM4Change: Together, We Can Improve Our Community Better!",
+    href: "/projects/stem",
   },
 ];
