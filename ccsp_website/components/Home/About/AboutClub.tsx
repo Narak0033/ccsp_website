@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 const AboutClub = () => {
   return (
     <div className='container my-28'>
-      <div className=" grid grid-cols-1 lg:grid-cols-2 space-y-12 md:px-8 lg:px-0">
+      <div className="grid grid-cols-1 lg:grid-cols-2 space-y-12 md:px-8 lg:px-0">
           <div>
             <h1 className="text-header text-gradient-r">
               About CCSP
