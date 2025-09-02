@@ -33,11 +33,12 @@ export interface SocialMedia {
 
 // ------------------- Navigation Links -------------------
 export const NavLinks: NavLink[] = [
-  { id: 1, url: "/", label: "Home" },
-  { id: 2, url: "#", label: "About" },
-  { id: 3, url: "#", label: "Projects" },
-  { id: 4, url: "#", label: "Contact" },
+  { id: 1, url: "", label: "Home" },
+  { id: 2, url: "about", label: "About" },
+  { id: 3, url: "projects", label: "Projects" },
+  { id: 4, url: "contact", label: "Contact" },
 ];
+
 
 // ------------------- Features -------------------
 export const Features: Feature[] = [

@@ -5,7 +5,7 @@ import { NavLinks, socialLink } from "@/constant/constant";
 const Footer = () => {
   return (
     <footer>
-    <div className="w-full border-t border-white/20 my-8"/>
+    <div className="w-full border-t border-white/20 mb-8"/>
       <div className="container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 ">
         
         {/* Logo + About */} 
