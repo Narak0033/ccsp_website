@@ -38,7 +38,7 @@ const ProjectCard: React.FC = () => {
 
             <h4 className="text-base text-white leading-relaxed">{project.title}</h4>
 
-            <Button asChild className="w-full p-4 bg-gray-600 text-white">
+            <Button asChild className="w-full p-4 bg-gray-600 text-white hover:bg-white hover:text-black">
               <Link href={project.href}>Read More</Link>
             </Button>
           </div>
