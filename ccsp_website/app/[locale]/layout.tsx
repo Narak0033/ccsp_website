@@ -4,6 +4,7 @@ import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import Nav from "../../components/Home/Navbar/Nav";
 import "./globals.css";
+import Footer from "@/components/Home/Footer/Footer";
 
 const latin = Montserrat({
   weight: ["100","200","300","400","500","600","700","800","900"],
@@ -45,6 +46,7 @@ export default async function LocaleLayout(props: {
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Nav />
           {children}
+          <Footer/>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -25,6 +25,11 @@ export interface Projects {
   title: string;
   href: string;
 }
+export interface SocialMedia {
+  href: string;
+  src: string;
+  label: string;
+}
 
 // ------------------- Navigation Links -------------------
 export const NavLinks: NavLink[] = [
@@ -81,4 +86,22 @@ export const projects: Projects[] = [
       "Support Our Mission: STEM4Change: Together, We Can Improve Our Community Better!",
     href: "/projects/stem",
   },
+];
+
+export const socialLink: SocialMedia[] = [
+  {
+      href: "https://www.facebook.com/profile.php?id=61566459083009",
+      src:  "/images/media-logo/fb.png",
+      label: "Facebook",
+    },
+    {
+      href: "https://www.instagram.com/aupp_ccsp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+       src:  "/images/media-logo/ig.png",
+      label: "Instagram",
+    },
+    {
+      href: "https://t.me/lydanaaa",
+       src:  "/images/media-logo/telegram.png",
+      label: "Telegram",
+    },
 ];

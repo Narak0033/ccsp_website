@@ -10,11 +10,11 @@ import { projects, Projects } from "@/constant/constant";
 
 const ProjectCard: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-8 lg:px-0">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-8 lg:px-0 ">
       {projects.map((project: Projects, idx: number) => (
         <Card
           key={idx}
-          className="bg-[#0f142ed9] border-gray-500 rounded-sm overflow-hidden p-0 gap-2">
+          className="bg-[#0f142ed9] border-gray-500 rounded-sm overflow-hidden p-0 gap-2 ">
           
           <div className="relative">
             <Image
@@ -38,7 +38,7 @@ const ProjectCard: React.FC = () => {
 
             <h4 className="text-base text-white leading-relaxed">{project.title}</h4>
 
-            <Button asChild variant="outline" className="w-full p-4">
+            <Button asChild className="w-full p-4 bg-gray-600 text-white">
               <Link href={project.href}>Read More</Link>
             </Button>
           </div>
