@@ -99,9 +99,4 @@ export const socialLink: SocialMedia[] = [
        src:  "/images/media-logo/ig.png",
       label: "Instagram",
     },
-    {
-      href: "https://t.me/lydanaaa",
-       src:  "/images/media-logo/telegram.png",
-      label: "Telegram",
-    },
 ];
