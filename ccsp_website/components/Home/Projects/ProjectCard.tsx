@@ -14,7 +14,7 @@ const ProjectCard: React.FC = () => {
       {projects.map((project: Projects, idx: number) => (
         <Card
           key={idx}
-          className="bg-[#1b2554d9] border-none rounded-sm overflow-hidden p-0 gap-2">
+          className="bg-[#0f142ed9] border-gray-500 rounded-sm overflow-hidden p-0 gap-2">
           
           <div className="relative">
             <Image

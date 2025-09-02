@@ -67,7 +67,7 @@ const QuestionAnswer = () => {
         aria-labelledby="faq-contact-title"
       >
         <Card
-          className="relative text-center bg-[#0f142ed9] text-white overflow-hidden px-8 py-20 md:py-18"
+          className="relative text-center bg-[#0f142ed9] border-gray-500 text-white overflow-hidden px-8 py-20 md:py-18"
           role="region"
           aria-labelledby="faq-contact-title"
         >
@@ -81,7 +81,7 @@ const QuestionAnswer = () => {
             <Link href="/us">
               <Button
                 variant="ghost"
-                className="bg-[#B22234]/60 w-60 h-full p-4 rounded-full text-base"
+                className="bg-[#B22234]/60 w-45 h-full p-4 rounded-full text-base"
               >
                 <SquareUser /> Contact Us
               </Button>

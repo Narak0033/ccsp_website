@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({
         {/* Features */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((feature: Feature, idx: number) => (
-            <div key={idx} className="card flex flex-col items-center p-4">
+            <div key={idx} className="card border-gray-500 flex flex-col items-center p-4">
               <feature.icon className={`w-8 h-8 ${feature.color} mb-2`} />
               <span className="text-sm font-medium text-shadow-amber-50 text-center">
                 {feature.text}
