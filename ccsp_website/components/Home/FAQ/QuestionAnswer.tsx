@@ -78,7 +78,7 @@ const QuestionAnswer = () => {
             >
               Still have questions? Contact us for more information
             </h3>
-            <Link href="/us">
+            <Link href="/contact">
               <Button
                 variant="ghost"
                 className="bg-[#B22234]/60 w-45 h-full p-4 rounded-full text-base"

@@ -8,6 +8,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import { usePathname } from "@/i18n/navigation";
 import { NavLinks as LINKS } from "@/constant/constant";
 
+
 const Nav = () => {
   const pathname = usePathname();
   const currentLangMatch = pathname.match(/^\/(en|km)/);
@@ -40,18 +41,17 @@ const Nav = () => {
         </div>
 
         {/* Desktop Nav Links */}
-        <div className="hidden lg:flex items-center space-x-12">
-          {LINKS.map((link) => (
-            <Link
-              key={link.id}
-              href={`/${currentLang}${link.url}`}
-              className="text-base hover:text-[#B22234] text-white font-medium transition-all duration-200"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-
+          <div className="hidden lg:flex items-center space-x-12">
+            {LINKS.map(link => (
+              <Link
+                key={link.id}
+                href={`/${currentLang}${link.url ? `/${link.url}` : ""}`}
+                className="text-base hover:text-[#B22234] text-white font-medium transition-all duration-200"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         {/* Right side */}
         <div className="flex items-center ">
           <LanguageSwitcher currentLang={currentLang} />
