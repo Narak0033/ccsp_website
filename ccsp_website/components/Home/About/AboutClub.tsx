@@ -13,7 +13,7 @@ const AboutClub = () => {
           </div>
 
           <div>
-            <p className="subtext mb-6 text-justify">
+            <p className="subtext mb-6 leading-relaxed">
               The Committee for Community Service Program <span className='font-bold text-[#B22234]'>(CCSP)</span> at the American
               University of Phnom Penh (AUPP) is a student-led initiative
               committed to fostering social responsibility and community

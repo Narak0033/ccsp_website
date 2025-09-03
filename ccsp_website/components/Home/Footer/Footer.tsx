@@ -19,8 +19,7 @@ const Footer = () => {
             style={{ width: "auto", height: "auto" }}
           />
           <p className="text-sm text-gray-300 md:text-left text-center">
-            Dedicated to fostering community engagement and providing impactful
-            service programs for a better tomorrow.
+            Committee for Community Service Program
           </p>
         </div>
 

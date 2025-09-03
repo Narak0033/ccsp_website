@@ -23,6 +23,7 @@ export interface Projects {
   tag: string;
   readableDate: string;
   title: string;
+  description: string;
   href: string;
 }
 export interface SocialMedia {
@@ -69,6 +70,8 @@ export const projects: Projects[] = [
     readableDate: "3-4 Jan 2025",
     title:
       "Support Our Mission: STEM4Change: Together, We Can Improve Our Community Better!",
+    description:
+      "We aim to empower students through hands-on STEM projects that drive innovation, teamwork, and positive change in the community.",
     href: "/projects/stem",
   },
   {
@@ -77,6 +80,8 @@ export const projects: Projects[] = [
     readableDate: "3-4 Jan 2025",
     title:
       "Support Our Mission: STEM4Change: Together, We Can Improve Our Community Better!",
+      description:
+      "We aim to empower students through hands-on STEM projects that drive innovation, teamwork, and positive change in the community.",
     href: "/projects/stem",
   },
   {
@@ -85,6 +90,8 @@ export const projects: Projects[] = [
     readableDate: "3-4 Jan 2025",
     title:
       "Support Our Mission: STEM4Change: Together, We Can Improve Our Community Better!",
+      description:
+      "We aim to empower students through hands-on STEM projects that drive innovation, teamwork, and positive change in the community.",
     href: "/projects/stem",
   },
 ];
