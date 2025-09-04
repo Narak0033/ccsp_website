@@ -71,7 +71,7 @@ const QuestionAnswer = () => {
           role="region"
           aria-labelledby="faq-contact-title"
         >
-          <div className="relative z-10 max-w-3xl mx-auto">
+          <div className="relative z-10 max-w-4xl mx-auto">
             <h3
               id="faq-contact-title"
               className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 leading-relaxed text-center"

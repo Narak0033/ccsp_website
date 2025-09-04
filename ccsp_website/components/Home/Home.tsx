@@ -6,7 +6,7 @@ import QuestionAnswer from './FAQ/QuestionAnswer'
 
 const Home = () => {
   return ( 
-    <div className='overflow-hidden '>
+    <div className='overflow-hidden'>
       <Hero/>
       <AboutClub/>
       <ClubProject/>
