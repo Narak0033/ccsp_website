@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { NavLinks as LINKS } from "@/constant/constant";
+import { ChevronDown } from "lucide-react";
 
 interface Props {
   currentLang: "en" | "km";
@@ -12,6 +13,7 @@ interface Props {
 
 export default function MobileNav({ currentLang }: Props) {
   const [open, setOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
     <div className="lg:hidden flex items-center">
@@ -22,16 +24,40 @@ export default function MobileNav({ currentLang }: Props) {
 
         <SheetContent side="right" className="w-[280px] p-6 bg-[#0f142ed9] border-none">
           <div className="flex flex-col space-y-4 my-16 text-white">
-            {LINKS.map(link => (
-              <Link
-                key={link.id}
-                href={`/${currentLang}${link.url ? `/${link.url}` : ""}`}
-                className="text-lg font-medium hover:text-[#1E40AF]"
-                onClick={() => setOpen(false)} // close sheet on click
-              >
-                {link.label}
-              </Link>
-            ))}
+            {LINKS.map((link) =>
+              link.children ? (
+                <div key={link.id} className="flex flex-col">
+                  <button
+                    className="flex justify-between items-center text-lg font-medium w-full hover:text-[#1E40AF]"
+                    onClick={() => setAboutOpen(!aboutOpen)}
+                  >
+                    {link.label}
+                    <ChevronDown className={`w-4 h-4 transition-transform ${aboutOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {aboutOpen &&
+                    link.children.map((child) => (
+                      
+                      <Link
+                        key={child.id}
+                        href={`/${currentLang}/${child.url}`}
+                        className="ml-4 mt-4 text-base font-normal hover:text-[#1E40AF]"
+                        onClick={() => setOpen(false)}
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                </div>
+              ) : (
+                <Link
+                  key={link.id}
+                  href={`/${currentLang}${link.url ? `/${link.url}` : ""}`}
+                  className="text-lg font-medium hover:text-[#1E40AF]"
+                  onClick={() => setOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
           </div>
         </SheetContent>
       </Sheet>

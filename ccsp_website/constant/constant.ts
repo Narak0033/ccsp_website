@@ -5,6 +5,7 @@ export interface NavLink {
   id: number;
   url: string;
   label: string;
+  children?: { id: number; url: string; label: string }[];
 }
 
 export interface Feature {
@@ -35,8 +36,13 @@ export interface SocialMedia {
 // ------------------- Navigation Links -------------------
 export const NavLinks: NavLink[] = [
   { id: 1, url: "", label: "Home" },
-  { id: 2, url: "about", label: "About" },
-  { id: 3, url: "projects", label: "Projects" },
+  { id: 2, url: "about", label: "About",
+    children: [
+    { id: 1, url: "about/about-us", label: "About CCSP" },
+    { id: 2, url: "about/about-team", label: "About Team" },
+    ],
+  },
+  { id: 3, url: "projects", label: "Projects"},
   { id: 4, url: "contact", label: "Contact" },
 ];
 
