@@ -27,14 +27,14 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   // const t = useTranslations('HomePage');
   return (
-    <section className="section-padding">
+    <section className="section-padding lg:min-h-screen lg:flex lg:items-center lg:justify-center">
     <div className="container flex flex-col lg:grid lg:grid-cols-2 items-center justify-center gap-8">
       {/* Left Content */}
       <div className="space-y-8 mt-12 lg:mt-0">
         <div className="text-header">
           <Typewriter
             options={{
-              strings: ["Empowering Students", "Building Future Leaders", "Community Impact"],
+              strings: ["Empowering Students", "Future Leadership", "Community Impact"],
               autoStart: true,
               loop: true,
               delay: 75,
@@ -42,15 +42,15 @@ const Hero: React.FC<HeroProps> = ({
             }}
           />
         </div>
-        <p className="subtext">
+        <p className=" text-gray-300 subtext">
           We equip rural students with essential skills and confidence through
           comprehensive programs in STEM, technology, English, and critical thinking.
         </p>
 
         {/* Features */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {features.map((feature: Feature, idx: number) => (
-            <div key={idx} className="card border-gray-500 flex flex-col items-center p-4">
+            <div key={idx} className="card border border-gray-700/50 flex flex-col items-center p-4">
               <feature.icon className={`w-8 h-8 ${feature.color} mb-2`} />
               <span className="text-sm font-medium text-shadow-amber-50 text-center">
                 {feature.text}
@@ -67,7 +67,7 @@ const Hero: React.FC<HeroProps> = ({
       </div>
 
       {/* Right Content (Swiper) */}
-      <div className="relative w-full lg:mt-0 md:px-8 lg:px-0 px-0">
+      <div className="relative w-full lg:mt-0 md:px-2 lg:px-0 px-0">
         <Swiper
           modules={[Autoplay, Pagination, EffectFade]}
           autoplay={{ delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true }}

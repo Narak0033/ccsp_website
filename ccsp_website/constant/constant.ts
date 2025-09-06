@@ -32,6 +32,9 @@ export interface SocialMedia {
   src: string;
   label: string;
 }
+export interface AboutCarousel{
+  src: string;
+}
 
 // ------------------- Navigation Links -------------------
 export const NavLinks: NavLink[] = [
@@ -114,3 +117,15 @@ export const socialLink: SocialMedia[] = [
       label: "Instagram",
     },
 ];
+
+export const slide: AboutCarousel[] =[
+  {
+    src: "/images/carousel/carousel1.png"
+  },
+    {
+    src: "/images/carousel/carousel2.png"
+  },
+  {
+    src: "/images/carousel/carousel3.png"
+  }
+]

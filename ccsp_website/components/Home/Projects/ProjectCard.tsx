@@ -3,43 +3,57 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Calendar } from "lucide-react";
+import { Calendar, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { projects, Projects } from "@/constant/constant"; 
 
 const ProjectCard: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-8 lg:px-0 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:px-2 lg:px-0">
       {projects.map((project: Projects, idx: number) => (
         <Card
           key={idx}
-          className="bg-[#0f142ed9] border-gray-600 rounded-sm overflow-hidden p-0 gap-2 ">
+          className="bg-[#0f142ed9] border border-gray-700/50 rounded-sm overflow-hidden p-0 "
+        >
           
-          <div className="relative">
+          <div className="relative overflow-hidden">
             <Image
               src={project.src}
               alt={project.title}
               width={600}
-              height={400}
-              className="w-full object-cover block"
+              height={500}
+              className="w-full h-52 object-cover "
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <Badge className="absolute top-3 left-3 bg-[#B22234]/90 backdrop-blur-sm border-0 text-white shadow-lg">
+              {project.tag}
+            </Badge>
           </div>
 
-          <div className="p-4 space-y-4 mb-2">
-            <Badge className="bg-[#B22234]/80">{project.tag}</Badge>
-
-            <div className="flex items-center gap-2">
-              <Calendar size={14} className="text-white/70" />
-              <time className="text-xs text-white/70 font-medium">
+          <div className="p-6 space-y-4">
+            <div className="flex items-center gap-2 text-white/60">
+              <Calendar size={14} className="transition-colors" />
+              <time className="text-xs font-medium tracking-wide">
                 {project.readableDate}
               </time>
             </div>
 
-            <h4 className="text-base text-white leading-relaxed">{project.title}</h4>
+            <h4 className="text-lg font-semibold text-white leading-relaxed group-hover:text-blue-100 transition-colors duration-200 line-clamp-2">
+              {project.title}
+            </h4>
 
-            <Button asChild className="w-full p-4 bg-gray-600 text-white hover:bg-white hover:text-black">
-              <Link href={project.href}>Read More</Link>
+            <Button 
+              asChild 
+              className="w-full bg-gradient-to-r from-gray-700 to-gray-600 text-white border-0 rounded-lg py-3 font-medium transition-all duration-300 hover:from-white hover:to-gray-100 hover:text-black hover:shadow-lg group/btn"
+            >
+              <Link href={project.href} className="flex items-center justify-center gap-2">
+                <span>Read More</span>
+                <ArrowRight 
+                  size={16} 
+                  className="transition-transform duration-300 group-hover/btn:translate-x-1" 
+                />
+              </Link>
             </Button>
           </div>
         </Card>
