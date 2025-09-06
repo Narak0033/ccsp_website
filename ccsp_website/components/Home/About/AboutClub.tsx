@@ -22,8 +22,8 @@ const AboutClub = () => {
         }}
       ></div>
 
-      <div className="container relative z-10 py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:px-8 lg:px-0 items-center">
+      <div className="container relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:px-2 lg:px-0 items-center">
           <div className="space-y-6">
             <div className="relative">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
@@ -44,7 +44,7 @@ const AboutClub = () => {
             {/* Modern content card */}
             <div className="relative ">
               {/* Glassmorphism effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-lg border border-gray-600"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-lg border border-gray-700/50"></div>
 
               <div className="relative p-8 space-y-6">
                 <p className="text-white/90 text-lg leading-relaxed font-light">

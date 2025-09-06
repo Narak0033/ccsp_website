@@ -5,7 +5,7 @@ import { MessageSquare } from "lucide-react";
 
 const ContactClub = () => {
   return (
-    <main className="pt-24 my-20">
+    <main className="my-20">
       <div className="container grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="space-y-4">
           <div className="small-card ">

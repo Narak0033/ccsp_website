@@ -28,7 +28,7 @@ export default function MobileNav({ currentLang }: Props) {
               link.children ? (
                 <div key={link.id} className="flex flex-col">
                   <button
-                    className="flex justify-between items-center text-lg font-medium w-full hover:text-[#1E40AF]"
+                    className="flex justify-between items-center text-lg font-medium w-full "
                     onClick={() => setAboutOpen(!aboutOpen)}
                   >
                     {link.label}
@@ -40,7 +40,7 @@ export default function MobileNav({ currentLang }: Props) {
                       <Link
                         key={child.id}
                         href={`/${currentLang}/${child.url}`}
-                        className="ml-4 mt-4 text-base font-normal hover:text-[#1E40AF]"
+                        className="ml-4 mt-4 text-base font-normal"
                         onClick={() => setOpen(false)}
                       >
                         {child.label}
@@ -51,7 +51,7 @@ export default function MobileNav({ currentLang }: Props) {
                 <Link
                   key={link.id}
                   href={`/${currentLang}${link.url ? `/${link.url}` : ""}`}
-                  className="text-lg font-medium hover:text-[#1E40AF]"
+                  className="text-lg font-medium]"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

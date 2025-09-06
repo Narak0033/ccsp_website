@@ -6,68 +6,74 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import AccordionQA from "./AccordionQA";
 import Image from "next/image";
-import { SquareUser } from "lucide-react";
+import { SquareUser, Sparkles } from "lucide-react";
 
 const QuestionAnswer = () => {
   return (
-    <section className="container my-20" aria-labelledby="faq-main-title">
+    <section className="container my-28 md:my-40" aria-labelledby="faq-main-title">
       {/* Header */}
-      <header className="flex items-center justify-center">
-        <div className="w-full max-w-2xl lg:max-w-3xl flex flex-col items-center gap-3">
-          <h1
-            id="faq-main-title"
-            className="text-header font-bold leading-snug text-center"
-          >
-            Frequently Asked Questions
-          </h1>
+      <header className="flex items-center justify-center mb-20">
+        <div className="w-full max-w-2xl lg:max-w-4xl flex flex-col items-center gap-6 text-center">
+          <div className="relative">
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-xl opacity-30"></div>
+            <h1
+              id="faq-main-title"
+              className="relative text-header font-bold leading-snug bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent"
+            >
+              Frequently Asked Questions
+            </h1>
+          </div>
 
-          <p className="subtext text-center text-gray-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            minus? Odit ex harum optio magni? Distinctio totam suscipit quod
-            enim numquam, provident perspiciatis nemo quasi maiores sequi cumque.
-            Omnis, harum.
+          <p className="subtext text-gray-300/90 leading-relaxed max-w-xl">
+            Find answers to common questions about our services. Can&apos;t find what you&apos;re looking for? 
+            <span className="text-blue-400"> We&apos;re here to help.</span>
           </p>
         </div>
       </header>
 
       {/* Main content */}
-      <main className="grid grid-cols-1 lg:grid-cols-2 mt-16 gap-6 max-w-5xl mx-auto">
+      <main className="grid grid-cols-1 lg:grid-cols-2 mt-16 gap-12 max-w-6xl mx-auto items-start">
         {/* Questions */}
         <section
           className="order-2 lg:order-1"
           aria-labelledby="faq-questions-title"
         >
-          <h2
-            id="faq-questions-title"
-            className="text-2xl lg:text-3xl mb-8 font-medium text-white"
-          >
-            FAQ List
-          </h2>
+          <div className="mb-10">
+            <h2
+              id="faq-questions-title"
+              className="text-2xl lg:text-3xl font-semibold text-white mb-3 flex items-center gap-3"
+            >
+              <Sparkles size={24} className="text-blue-400" />
+              FAQ List
+            </h2>
+          </div>
           <AccordionQA />
         </section>
 
         {/* Image */}
         <figure
-          className="order-1 lg:order-2 flex items-start justify-center"
+          className="order-1 lg:order-2 flex items-center justify-center"
           aria-labelledby="faq-image-caption"
         >
-          <Image
-            src="/images/home/FAQs-amico.png"
-            alt="qa"
-            width={300}
-            height={300}
-            style={{ width: "auto", height: "auto" }}
-          />
+       
+              <Image
+                src="/images/home/FAQs-amico.png"
+                alt="Frequently Asked Questions illustration"
+                width={350}
+                height={350}
+                style={{ width: "auto", height: "auto" }}
+                className="transition-transform "
+              />
         </figure>
       </main>
 
       {/* Contact Section */}
       <aside
-        className="gap-6 my-12 max-w-5xl mx-auto"
+        className="lg:px-8 my-20"
         aria-labelledby="faq-contact-title"
       >
         <Card
-          className="relative text-center bg-[#0f142ed9] border-gray-500 text-white overflow-hidden px-8 py-20 md:py-18"
+          className="relative text-center bg-[#0f142ed9] border border-gray-700/50 text-white overflow-hidden px-8 py-20 md:py-18"
           role="region"
           aria-labelledby="faq-contact-title"
         >

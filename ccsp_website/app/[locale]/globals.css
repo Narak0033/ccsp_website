@@ -137,7 +137,7 @@
     @apply bg-gradient-to-b from-white to-[#8B0000] text-transparent bg-clip-text;
   }
   .section-padding {
-  @apply my-32 md:my-40 lg:pt-24;
+  @apply my-28 md:my-40 lg:my-0;
 }
 
   .text-gradient-r {
@@ -147,7 +147,7 @@
     @apply inline-flex items-center px-4 py-2 bg-[#B22234]/60 text-white text-sm font-medium rounded-full;
   }
   .text-header{
-    @apply text-3xl md:text-4xl font-bold; 
+    @apply text-4xl md:text-5xl font-bold; 
   }
   .subtext{
     @apply max-w-2xl text-lg text-shadow-white leading-relaxed;
