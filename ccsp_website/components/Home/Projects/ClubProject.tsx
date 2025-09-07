@@ -28,7 +28,7 @@ const ClubProject = () => {
           <ProjectCard />
  
         <div className='my-14 items-center justify-center flex'>
-        <Link href="/us">
+        <Link href="/projects">
           <Button variant="ghost" className="bg-[#B22234]/60 w-55 h-full  p-4 rounded-full text-base">
             Views All Projects <ChevronRightIcon />
           </Button>
