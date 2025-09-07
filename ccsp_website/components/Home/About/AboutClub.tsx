@@ -6,12 +6,6 @@ import { Button } from "@/components/ui/button";
 const AboutClub = () => {
   return (
     <div className="relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-br from-red-400 to-pink-500 rounded-full blur-xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full blur-xl animate-pulse delay-500"></div>
-      </div>
 
       {/* Subtle grid pattern overlay */}
       <div
@@ -31,12 +25,6 @@ const AboutClub = () => {
                 <br />
                 <span className="text-white bg-clip-text">CCSP</span>
               </h1>
-
-              {/* Animated underline */}
-              <div className="relative mt-4">
-                <div className="h-1 bg-gradient-to-r from-[#B22234] to-transparent rounded-full w-24 animate-pulse"></div>
-                <div className="h-0.5 bg-gradient-to-r from-white to-transparent rounded-full w-16 mt-1 animate-pulse delay-300"></div>
-              </div>
             </div>
           </div>
 
