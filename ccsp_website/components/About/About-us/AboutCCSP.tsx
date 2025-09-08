@@ -3,7 +3,7 @@ import React from 'react'
 const AboutCCSP = () => {
   return (
     <section className='my-24'>
-        <div className="container relative z-10">
+        <div data-aos="fade-up" className="container relative z-10">
             <div className="grid grid-cols-1 md:px-2 lg:px-0 items-center">
                 <div className="space-y-8">
                     <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-xl opacity-30"></div>

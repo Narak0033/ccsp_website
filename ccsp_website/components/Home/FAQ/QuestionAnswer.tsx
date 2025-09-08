@@ -13,7 +13,7 @@ const QuestionAnswer = () => {
     <section className="container my-28 md:my-40" aria-labelledby="faq-main-title">
       {/* Header */}
       <header className="flex items-center justify-center mb-20">
-        <div className="w-full max-w-2xl lg:max-w-4xl flex flex-col items-center gap-6 text-center">
+        <div data-aos="fade-up" className="w-full max-w-2xl lg:max-w-4xl flex flex-col items-center gap-6 text-center">
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-xl opacity-30"></div>
             <h1
@@ -35,6 +35,7 @@ const QuestionAnswer = () => {
       <main className="grid grid-cols-1 lg:grid-cols-2 mt-16 gap-12 max-w-6xl mx-auto items-start">
         {/* Questions */}
         <section
+          data-aos="fade-right"
           className="order-2 lg:order-1"
           aria-labelledby="faq-questions-title"
         >
@@ -52,6 +53,7 @@ const QuestionAnswer = () => {
 
         {/* Image */}
         <figure
+          data-aos="fade-left"
           className="order-1 lg:order-2 flex items-center justify-center"
           aria-labelledby="faq-image-caption"
         >
@@ -69,6 +71,7 @@ const QuestionAnswer = () => {
 
       {/* Contact Section */}
       <aside
+        data-aos="fade-up"
         className="lg:px-8 my-20"
         aria-labelledby="faq-contact-title"
       >

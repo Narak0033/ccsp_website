@@ -12,7 +12,7 @@ const ProjectCard: React.FC = () => {
 
 
   return (
-    <div className="grid grid-cols-1 gap-6 md:px-8 lg:px-0">
+    <div data-aos="fade-up" className="grid grid-cols-1 gap-6 md:px-8 lg:px-0">
       {projects.map((project: Projects, idx: number) => (
         <Card
           key={idx}

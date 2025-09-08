@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({
     <section className="section-padding lg:min-h-screen lg:flex lg:items-center lg:justify-center">
     <div className="container flex flex-col lg:grid lg:grid-cols-2 items-center justify-center gap-8">
       {/* Left Content */}
-      <div className="space-y-8 mt-12 lg:mt-0">
+      <div data-aos="fade-right" className="space-y-8 mt-12 lg:mt-0">
         <div className="text-header">
           <Typewriter
             options={{
@@ -67,7 +67,7 @@ const Hero: React.FC<HeroProps> = ({
       </div>
 
       {/* Right Content (Swiper) */}
-      <div className="relative w-full lg:mt-0 md:px-2 lg:px-0 px-0">
+      <div data-aos="fade-left" className="relative w-full lg:mt-0 md:px-2 lg:px-0 px-0">
         <Swiper
           modules={[Autoplay, Pagination, EffectFade]}
           autoplay={{ delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true }}

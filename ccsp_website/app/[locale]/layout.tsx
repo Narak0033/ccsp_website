@@ -3,6 +3,7 @@ import { Montserrat, Kantumruy_Pro } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import Nav from "../../components/Home/Navbar/Nav";
 import "./globals.css";
+import AOSProvider from "@/components/AOS/AOSProvider";
 import Footer from "@/components/Home/Footer/Footer";
 
 const latin = Montserrat({
@@ -38,9 +39,11 @@ export default async function LocaleLayout(props: {
     <html lang={locale} className={`${latin.variable} ${khmer.variable}`}>
       <body className="font-sans">
         <NextIntlClientProvider>
+          <AOSProvider>
           <Nav />
           {props.children}
           <Footer />
+          </AOSProvider>
         </NextIntlClientProvider>
       </body>
     </html>
