@@ -1,4 +1,4 @@
-import { Users, BookOpen, Lightbulb, Globe } from "lucide-react";
+import { Users, BookOpen, Lightbulb, Globe, HandHeart, GraduationCap } from "lucide-react";
 
 // ------------------- Types -------------------
 export interface NavLink {
@@ -34,6 +34,14 @@ export interface SocialMedia {
 }
 export interface AboutCarousel{
   src: string;
+}
+export interface CardVission {
+  title: string;
+  description: string;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  iconColor: string;
+  borderColor: string;
+  bgColor?: string;
 }
 
 // ------------------- Navigation Links -------------------
@@ -119,13 +127,31 @@ export const socialLink: SocialMedia[] = [
 ];
 
 export const slide: AboutCarousel[] =[
+  { src: "/images/carousel/carousel1.png" },
+  { src: "/images/carousel/carousel2.png" },
+  { src: "/images/carousel/carousel3.png" }
+]
+
+export const cards: CardVission[] = [
   {
-    src: "/images/carousel/carousel1.png"
-  },
-    {
-    src: "/images/carousel/carousel2.png"
+    title: "Empower",
+    description: "We aim to provide underprivileged communities, especially children, with the tools and opportunities to create change in their lives through education and skills development.",
+    icon: HandHeart,
+    iconColor: "text-[#1565c0]",
+    borderColor: "border-[#1565c0]",
   },
   {
-    src: "/images/carousel/carousel3.png"
-  }
+    title: "Education",
+    description: "We focus on providing access to quality education in STEM and digital literacy, as education is key to creating lasting positive impacts.",
+    icon: GraduationCap,
+    iconColor: "text-[#B22234]",
+    borderColor: "border-[#B22234]",
+  },
+  {
+    title: "Sustain",
+    description: "We are committed to ensuring that the positive changes we create are long-lasting, fostering continued growth and development for future generations.",
+    icon: Globe,
+    iconColor: "text-[#008000]",
+    borderColor: "border-[#008000]",
+  },
 ]
