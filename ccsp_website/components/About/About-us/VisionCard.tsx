@@ -12,7 +12,7 @@ interface HoverCardProps {
 
 const HoverCard: React.FC<HoverCardProps> = ({ title, description, Icon, iconColor, borderColor }) => {
   return (
-    <Card className='container relative w-full bg-[#0f142ed9] border-gray-600 rounded-lg shadow-lg overflow-hidden flex items-center justify-center hover:bg-[#161b39d9]'>
+    <Card data-aos="zoom-in-up" className='container relative w-full bg-[#0f142ed9] border-gray-600 rounded-lg shadow-lg overflow-hidden flex items-center justify-center hover:bg-[#161b39d9]'>
       <div className={`relative w-40 h-40 border-2 ${borderColor} rounded-full flex flex-col items-center justify-center group cursor-pointer`}>
         <Icon className={`w-20 h-20 ${iconColor}`} />
     </div>

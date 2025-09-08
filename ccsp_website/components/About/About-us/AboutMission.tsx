@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutMission = () => {
   return (
-    <section className="my-16">
+    <section data-aos="fade-up" className="my-16">
       <div className="container relative text-center mx-auto w-max">
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-xl opacity-30"></div>
             <h1

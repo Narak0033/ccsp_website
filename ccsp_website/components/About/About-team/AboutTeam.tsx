@@ -21,19 +21,28 @@ const AboutTeam = () => {
           </div>
         </div>
       </div>
-      <div className="container mb-6 mt-16 flex justify-center gap-4  flex-wrap">
+      <div 
+      data-aos="fade-up"
+      
+      className="container mb-6 mt-16 flex justify-center gap-4  flex-wrap">
         {advisor.map((ad, idx) => (
           <TeamCard key={idx} member={ad} />
         ))}
       </div>
 
-      <div className="container my-6 flex justify-center gap-4 flex-wrap">
+      <div 
+      data-aos="fade-up"
+      
+      className="container my-6 flex justify-center gap-4 flex-wrap">
         {leaders.map((lead, idx) => (
           <TeamCard key={idx} member={lead} />
         ))}
       </div>
 
-      <div className="container my-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+      <div 
+      data-aos="fade-up"
+      
+      className="container my-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
         {member.map((mem, idx) => (
           <TeamCard key={idx} member={mem} />
         ))}

@@ -5,7 +5,7 @@ const AllProjects = () => {
     <div className='overflow-hidden pt-[12vh]'>
         <div className="container my-20">
         {/* Header Section */}
-        <div className="flex justify-center items-center flex-col space-y-6 mb-12">
+        <div data-aos="fade-up" className="flex justify-center items-center flex-col space-y-6 mb-12">
           <div className="text-center space-y-4">
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-xl opacity-30"></div>

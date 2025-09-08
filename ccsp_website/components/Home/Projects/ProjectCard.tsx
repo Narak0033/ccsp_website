@@ -13,6 +13,7 @@ const ProjectCard: React.FC = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:px-2 lg:px-0">
       {projects.map((project: Projects, idx: number) => (
         <Card
+          data-aos="zoom-in-up"
           key={idx}
           className="bg-[#0f142ed9] border border-gray-700/50 rounded-sm overflow-hidden p-0 gap-0"
         >

@@ -20,7 +20,7 @@ const AboutClub = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:px-2 lg:px-0 items-center">
           <div className="space-y-6">
             <div className="relative">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
+              <h1 data-aos="fade-up" className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
                 <span className="text-white bg-clip-text ">About</span>
                 <br />
                 <span className="text-white bg-clip-text">CCSP</span>
@@ -30,7 +30,7 @@ const AboutClub = () => {
 
           <div className="space-y-8">
             {/* Modern content card */}
-            <div className="relative ">
+            <div data-aos="fade-up" className="relative ">
               {/* Glassmorphism effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-lg border border-gray-700/50"></div>
 
