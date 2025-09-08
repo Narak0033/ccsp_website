@@ -11,9 +11,10 @@ import "swiper/css/pagination";
 
 interface CarouselProp {
   slide?: AboutCarousel[];
+  title?: string;   
 }
 
-const CarouselSlide: React.FC<CarouselProp> = ({ slide = defaultSlide }) => {
+const CarouselSlide: React.FC<CarouselProp> = ({ slide = defaultSlide, title = [] }) => {
   return (
     <div className="w-full h-screen relative">
       <Swiper
@@ -33,13 +34,11 @@ const CarouselSlide: React.FC<CarouselProp> = ({ slide = defaultSlide }) => {
               className="object-cover w-full h-full"
             />
 
-            {/* Semi-transparent overlay */}
             <div className="absolute inset-0 bg-black/50"></div>
 
-            {/* Centered H1 */}
             <div className="absolute inset-0 flex items-center justify-center">
               <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-black text-center px-4">
-                About CCSP
+                {title}  
               </h1>
             </div>
           </SwiperSlide>

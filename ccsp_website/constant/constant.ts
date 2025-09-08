@@ -43,7 +43,18 @@ export interface CardVission {
   borderColor: string;
   bgColor?: string;
 }
-
+export interface SocialLinksType{
+  facebook: string;
+  instagram: string;
+  linkedin: string;
+}
+export interface TeamMember{
+  name: string;
+  role: string;
+  major: string;
+  image: string;
+  social?: SocialLinksType;
+}
 // ------------------- Navigation Links -------------------
 export const NavLinks: NavLink[] = [
   { id: 1, url: "", label: "Home" },
@@ -153,5 +164,100 @@ export const cards: CardVission[] = [
     icon: Globe,
     iconColor: "text-[#008000]",
     borderColor: "border-[#008000]",
+  },
+]
+
+export const advisor: TeamMember[] = [
+  {
+    name: "Dr. Danet Hak",
+    role: "Advisor",
+    major: "Liberal Arts and Sciences",
+    image: "/images/team/advisor-danet.png",
+    social: {
+      facebook: "https://www.facebook.com/hak.danet.7",
+      instagram: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw==",
+      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
+    },
+  },
+]
+export const leaders: TeamMember[] = [
+  {
+    name: "Chanrithlaksmey Chhoeth",
+    role: "Leader",
+    major: "Cybersecurity",
+    image: "/images/team/leader-smi.png",
+    social: {
+      facebook: "https://www.facebook.com/leaksmiii",
+      instagram: "https://www.instagram.com/l34k5m111?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
+    },
+  },
+  {
+    name: "Sreypich Leam",
+    role: "Co Leader",
+    major: "Cybersecurity",
+    image: "/images/team/leader-pich.png",
+    social: {
+      facebook: "https://www.facebook.com/leam.sreypich.5",
+      instagram: "https://www.instagram.com/h_orang.hae?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
+    },
+  },
+]
+export const member: TeamMember[] = [
+  {
+    name: "Chanboromey Chhay",
+    role: "Officer",
+    major: "Computer Science",
+    image: "/images/team/member-mey.png",
+    social: {
+      facebook: "https://www.facebook.com/chhay.chanboromey",
+      instagram: "https://www.instagram.com/iamboromey?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
+    },
+  },
+  {
+    name: "CHING CHOU KEO",
+    role: "Officer",
+    major: "Computer Science",
+    image: "/images/team/member-chou.png",
+    social: {
+      facebook: "https://www.facebook.com/XBangZeX",
+      instagram: "https://www.instagram.com/xbangzex/?utm_source=ig_web_button_share_sheet",
+      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
+    },
+  },
+  {
+    name: "Lydana Tan",
+    role: "Officer",
+    major: "Software Development",
+    image: "/images/team/member-dana.png",
+    social: {
+      facebook: "https://www.facebook.com/dana.974245/",
+      instagram: "https://www.instagram.com/__danaaaa__/",
+      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
+    },
+  },
+  {
+    name: "Narak Horn",
+    role: "Officer",
+    major: "Digital Infrastructure",
+    image: "/images/team/member-narak.png",
+    social: {
+      facebook: "https://www.facebook.com/na.rak.459263",
+      instagram: "https://www.instagram.com/narak_03?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
+    },
+  },
+  {
+    name: "Visal Hor",
+    role: "Officer",
+    major: "Computer Science",
+    image: "/images/team/member-visal.png",
+    social: {
+      facebook: "https://www.facebook.com/share/1FzonyxWBm/",
+      instagram: "https://www.instagram.com/sal_is_sleepy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
+    },
   },
 ]
