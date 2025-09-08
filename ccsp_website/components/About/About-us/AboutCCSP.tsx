@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutCCSP = () => {
   return (
-<section className='my-24'>
+    <section className='my-24'>
         <div className="container relative z-10">
             <div className="grid grid-cols-1 md:px-2 lg:px-0 items-center">
                 <div className="space-y-8">

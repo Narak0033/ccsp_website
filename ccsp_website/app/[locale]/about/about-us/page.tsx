@@ -3,11 +3,14 @@ import AboutMission from '@/components/About/About-us/AboutMission'
 import AboutVision from '@/components/About/About-us/AboutVision'
 import CarouselSlide from '@/components/About/About-us/CarouselSlide'
 import React from 'react'
+import { slide } from "@/constant/constant";
+
+
 
 const AboutUs = () => {
     return (
     <div className='overflow-hidden'>
-      <CarouselSlide/>
+      <CarouselSlide slide={slide} title="About CCSP" />
       <AboutCCSP/>
       <AboutMission/>
       <AboutVision/>
