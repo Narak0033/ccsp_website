@@ -138,7 +138,7 @@
     @apply bg-gradient-to-b from-white to-[#8B0000] text-transparent bg-clip-text;
   }
   .section-padding {
-  @apply my-28 md:my-40 lg:my-0;
+  @apply my-36 md:my-40 lg:my-0;
 }
 
   .text-gradient-r {
