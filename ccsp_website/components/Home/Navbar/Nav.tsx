@@ -35,7 +35,7 @@ const Nav = () => {
         navBg ? "bg-[#0f142ed9] shadow-md" : ""
       }`}
     >
-      <div className="flex items-center justify-between max-w-7xl mx-auto p-6 h-full container">
+      <div className="flex items-center justify-between h-full container">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Image
@@ -44,6 +44,7 @@ const Nav = () => {
             width={150}
             height={200}
             style={{ width: "auto", height: "auto" }}
+            priority
           />
         </div>
 
