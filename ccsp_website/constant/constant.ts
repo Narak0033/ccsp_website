@@ -93,7 +93,7 @@ export const heroSlides: HeroSlide[] = [
 
 export const projects: Projects[] = [
   {
-    src: "/images/home/homepage1.png",
+    src: "/images/logo/stem.png",
     tag: "STEM",
     readableDate: "3-4 Jan 2025",
     title:
@@ -103,9 +103,9 @@ export const projects: Projects[] = [
     href: "/projects/stem",
   },
   {
-    src: "/images/home/homepage1.png",
-    tag: "STEM",
-    readableDate: "3-4 Jan 2025",
+    src: "/images/logo/ncic.png",
+    tag: "Community Service",
+    readableDate: "April 6 2025",
     title:
       "Support Our Mission: STEM4Change: Together, We Can Improve Our Community Better!",
       description:
@@ -113,9 +113,9 @@ export const projects: Projects[] = [
     href: "/projects/stem",
   },
   {
-    src: "/images/home/homepage1.png",
-    tag: "STEM",
-    readableDate: "3-4 Jan 2025",
+    src: "/images/logo/cyberai.png",
+    tag: "CyberAI",
+    readableDate: "Aug-September 2025",
     title:
       "Support Our Mission: STEM4Change: Together, We Can Improve Our Community Better!",
       description:
