@@ -1,19 +1,18 @@
-"use client";
-
-import React from "react";
 import ProjectCard from "@/components/Project/ProjectCard";
+import { getProjectsForCards } from "@/lib/getProjectsForCards";
 
 interface ProjectOverviewProps {
-  params: { lang: "en" | "km" };
+  params: { locale: "en" | "km" };
 }
 
-const AllProjects = ({ params }: ProjectOverviewProps) => {
+export default function AllProjects({ params }: ProjectOverviewProps) {
+  const cards = getProjectsForCards(params.locale); // server-side
+
   return (
     <div className="overflow-hidden pt-[12vh]">
       <div className="container my-20">
         {/* Header Section */}
         <div
-          data-aos="fade-up"
           className="flex justify-center items-center flex-col space-y-6 mb-12"
         >
           <div className="text-center space-y-4">
@@ -31,10 +30,8 @@ const AllProjects = ({ params }: ProjectOverviewProps) => {
         </div>
 
         {/* Project Cards */}
-        <ProjectCard />
+        <ProjectCard projects={cards} />
       </div>
     </div>
   );
-};
-
-export default AllProjects;
+}
