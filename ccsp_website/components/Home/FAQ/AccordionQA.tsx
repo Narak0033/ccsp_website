@@ -37,13 +37,13 @@ const AccordionQA: React.FC = () => {
           <AccordionItem
             key={idx}
             value={`item-${idx}`}
-            className="group bg-[#0f142ed9]/50 backdrop-blur-sm border border-gray-700/50 rounded-xl px-6 py-2 text-white hover:border-blue-400/30 hover:bg-[#1a1f3ed9]/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 data-[state=open]:border-blue-400/50 data-[state=open]:bg-[#1a1f3ed9]/70"
+            className="group bg-[#0f142ed9]/50 backdrop-blur-sm border border-gray-700/50 rounded-xl px-6 py-2 text-white  "
           >
-            <AccordionTrigger className="text-lg text-white [&_svg]:text-blue-400 [&_svg]:transition-colors [&_svg]:duration-300 hover:text-blue-100 py-6 group-hover:[&_svg]:text-blue-300 data-[state=open]:text-blue-200 flex items-start gap-4 text-left">
+            <AccordionTrigger className="text-lg text-white py-6  flex items-start gap-4 text-left">
               <div className="flex items-start gap-3 flex-1">
                 <HelpCircle 
                   size={20} 
-                  className="text-blue-400 mt-0.5 flex-shrink-0 transition-colors duration-300 group-hover:text-blue-300" 
+                  className="text-blue-400 mt-0.5 flex-shrink-0 transition-colors duration-300 " 
                 />
                 <span className="leading-relaxed">
                   {t(item.questionKey)}

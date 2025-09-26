@@ -1,12 +1,14 @@
 ---
-title: "Aupp committee for community service program (CCSP) present Cyber AI"
+title: "CyberAI Explorer: Empowering Students with Cybersecurity & AI Skills"
 date: "Aug Sep 2025"
 author: "CCSP Team"
-featuredImage: "/images/carousel/carousel1.png"
+featuredImage: "/images/blog/cyberai.png"
 galleryImages:
-  - "/images/carousel/carousel1.png"
-  - "/images/carousel/carousel2.png"
-  - "/images/carousel/carousel3.png"
+  - "/images/blog/cyberai1.jpg"
+  - "/images/blog/cyberai2.png"
+  - "/images/blog/cyberai3.jpg"
+  - "/images/blog/cyberai4.jpg"
+  - "/images/blog/cyberai5.jpg"
 ---
 
 (Phnom Penh) : After six weeks of training and collaboration, our volunteers from team 1 Cohort 1 successfully completed the CyberAI Explorer service at Neeson Cripps Academy on 27th August and 3rd September, dedicating two Wednesdays to this initiative.

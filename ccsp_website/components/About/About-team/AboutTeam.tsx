@@ -1,8 +1,10 @@
 import React from "react";
 import TeamCard from "./TeamCard";
 import { advisor, leaders, member } from "@/constant/constant"; 
+import { useTranslations } from "next-intl";
 
 const AboutTeam = () => {
+   const t = useTranslations("Team");
   return (
     <section className="my-24">
       <div className="container relative z-10 grid grid-cols-1 md:px-2 lg:px-0 items-center">
@@ -10,13 +12,12 @@ const AboutTeam = () => {
           <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-full blur-xl opacity-30"></div>
           <div className="relative">
             <h1 className="text-header text-center font-black leading-tight mb-2">
-              Leadership
+              {t("title")}
             </h1>
           </div>
           <div className="flex items-center justify-center">
             <p className="text-lg leading-relaxed text-center max-w-5xl text-white">
-              The Committee for Community Service Program (CCSP) at the American
-              University of Phnom Penh (AUPP).
+              {t("description")}
             </p>
           </div>
         </div>

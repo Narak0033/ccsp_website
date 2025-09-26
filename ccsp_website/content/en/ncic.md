@@ -1,12 +1,13 @@
 ---
-title: "Aupp committee for community service program (CCSP) present Community Service"
+title: "Spreading Care: CCSP’s Donation Drive for Children in Need"
 date: "6 April 2025"
-author: "CCSP Team"
-featuredImage: "/images/home/homepage3.png"
+author: "Write by: Advisor"
+featuredImage: "/images/blog/ncic.jpg"
 galleryImages:
-  - "/images/carousel/carousel1.png"
-  - "/images/carousel/carousel2.png"
-  - "/images/carousel/carousel3.png"
+  - "/images/blog/ncic1.jpg"
+  - "/images/blog/ncic2.jpg"
+  - "/images/blog/ncic3.jpg"
+  - "/images/blog/ncic4.jpg"
 ---
 
 (Phnom Penh) : On April 6, 2025, our Committee for Community Services Program team, together with students from the Environmental Sciences class and colleagues from Bridge Bank, delivered donations to the National Center for Infants and Children.

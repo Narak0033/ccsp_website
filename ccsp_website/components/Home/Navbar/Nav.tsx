@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Nav = () => {
   const pathname = usePathname();
@@ -28,10 +29,10 @@ const Nav = () => {
     window.addEventListener("scroll", handler);
     return () => window.removeEventListener("scroll", handler);
   }, []);
-
+  const t = useTranslations("Navbar");
   return (
     <div
-      className={`transition-all duration-200 h-[12vh] sticky top-0 w-full z-50 ${
+      className={`transition-all duration-200 h-[12vh] fixed  w-full z-50 ${
         navBg ? "bg-[#0f142ed9] shadow-md" : ""
       }`}
     >
@@ -50,32 +51,34 @@ const Nav = () => {
 
         {/* Desktop Nav Links */}
         <div className="hidden lg:flex items-center space-x-8">
-          {LINKS.map((link) =>
-            link.children ? (
-              <DropdownMenu key={link.id}>
-                <DropdownMenuTrigger asChild>
-                  <Button className="flex items-center gap-2 text-base font-medium bg-transparent hover:bg-transparent">
-                    {link.label} <ChevronDown className="w-5 h-5" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent >
-                  {link.children.map((child) => (
-                    <DropdownMenuItem key={child.id} asChild >
-                      <Link href={`/${currentLang}/${child.url}`}>{child.label}</Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
+        {LINKS.map((link) =>
+          link.children ? (
+            <DropdownMenu key={link.id}>
+              <DropdownMenuTrigger asChild>
+                <Button className="flex items-center gap-2 text-base font-medium bg-transparent hover:bg-transparent">
+                  {t(link.label)} <ChevronDown className="w-5 h-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                {link.children.map((child) => (
+                  <DropdownMenuItem key={child.id} asChild>
+                    <Link href={`/${currentLang}/${child.url}`}>
+                      {t(child.label)}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ) : (
             <Link
-                  key={link.id}
-                  href={`/${currentLang}${link.url ? `/${link.url}` : ""}`}
-                  className="text-base hover:text-[#B22234] text-white font-medium transition-all duration-200"
-                >
-                  {link.label}
+              key={link.id}
+              href={`/${currentLang}${link.url ? `/${link.url}` : ""}`}
+              className="text-base hover:text-[#B22234] text-white font-medium transition-all duration-200"
+            >
+              {t(link.label)}
             </Link>
-            )
-          )}
+          )
+        )}
         </div>
 
         {/* Right side */}

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { TeamMember } from "@/constant/constant";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import { Badge } from "@/components/ui/badge"; 
 
 interface TeamCardProps {
@@ -42,11 +42,6 @@ const TeamCard: React.FC<TeamCardProps> = ({ member }) => {
           {member.social?.instagram && (
             <Link href={member.social.instagram} target="_blank" className="text-white rounded-full border-0 bg-gray-600 p-2">
               <Instagram size={18} />
-            </Link>
-          )}
-          {member.social?.linkedin && (
-            <Link href={member.social.linkedin} target="_blank" className="text-white rounded-full border-0 bg-gray-600 p-2">
-              <Linkedin size={18} />
             </Link>
           )}
         </div>

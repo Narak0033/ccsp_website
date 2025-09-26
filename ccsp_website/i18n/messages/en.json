@@ -1,15 +1,103 @@
-{
-  "HomePage": {
-    "title": "Hello world!"
+{   
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "about-ccsp": "About AUPP CCSP",
+    "about-team": "About Team"
+  },
+  "HomePage":{
+    "header1": "Empowering student",
+    "header2": "Future leadership",
+    "header3": "Community impact",
+    "subtext": "We equip rural students with essential skills and confidence through comprehensive programs in STEM, technology, English, and critical thinking.",
+    "card1": "Stem Education",
+    "card2": "English Language",
+    "card3": "Environmental Education",
+    "card4": "Community Focus",
+    "btn": "Learn more"
   },
   "FAQPage": {
+    "btn": "Contact us",
+    "title": "Learn More About AUPP CCSP!",
+    "subtitle": "If you have questions about AUPP CCSP, you can explore them through the Q&A below. If anything is still unclear, you can contact our team via our contact page!",
+    "faqList": "Frequently Asked Questions:",
+    "help": "We're here to help",
+    "contactTitle": "If you still have questions or need further clarification, you can reach out to our team using the 'Contact' button below. We are happy to answer all your questions.",
     "qa": {
-      "question1": "Question 1",
-      "question2": "Question 2",
-      "question3": "Question 3",
-      "answer1": "Answer 1",
-      "answer2": "Answer 2",
-      "answer3": "Answer 3"
+      "question1": "Who can join CCSP?",
+      "answer1": "Any AUPP student who is passionate about community service, leadership, and social impact is welcome to join CCSP.",
+
+      "question2": "What kind of projects does CCSP organize?",
+      "answer2": "CCSP organizes a variety of projects such as STEM education workshops, English language support, environmental awareness programs, and technology initiatives.",
+
+      "question3": "How does CCSP benefit students?",
+      "answer3": "Students gain hands-on experience, leadership skills, teamwork, and opportunities to create real social impact while connecting academic learning with practical application."
     }
+  },
+  "FeatureProject": {
+    "btnAll": "Views All Projects",
+    "btn": "Read more",
+    "title": "Our Projects",
+    "subtitle": "Discover a showcase of our student-led initiatives dedicated to creating positive impact and bridging academic learning with real-world experience.",
+    "projects": [
+      {"title": "STEM4Change: Together, We Can Improve Our Community and Inspire Students!"},
+      {"title": "Community Service: Donations to National Infant and Child Center for Local Children"},
+      {"title": "CyberAI: Teaching Cybersecurity & AI Skills to High School Students Effectively"}
+    ]
+  },
+  "AboutPage":{
+    "title": "About",
+    "content": "at the American University of Phnom Penh (AUPP) is a student-led initiative committed to fostering social responsibility and community engagement. Our mission is to bridge academic learning with real-world impact, empowering students to make meaningful contributions to Cambodian society through a range of community-driven projects.",
+    "btn": "See more"
+  },
+  "FooterPage":{
+    "quicklink": "Quick Link",
+    "social": "Social Media",
+    "home": "Home",
+    "about-ccsp": "About AUPP CCSP",
+    "about-team": "About Team",
+    "projects": "Projects",
+    "contact": "Contact",
+    "spp": "Supported by",
+    "create": "Created by"
+  },
+  "AboutClub":{
+    "title1": "at the American University of Phnom Penh (AUPP) is a student-led initiative committed to fostering social responsibility and community engagement. Our mission is to bridge academic learning with real-world impact, empowering students to make meaningful contributions to Cambodian society through a range of community-driven projects.",
+    "title2": "Our initiatives address pressing social issues, providing students with valuable hands-on experiences. By applying their knowledge in practical ways, students are able to create positive change within their communities."
+  },
+  "Mission":{
+    "title": "Our Mission",
+    "description": "At AUPP CCSP, we're passionate about empowering underprivileged communities, especially children, by providing access to quality education in STEM and digital literacy. We believe that education has the power to transform lives, and we&apos;re committed to giving back to those who need it the most. Our goal is to create lasting change, helping individuals and communities grow and succeed in the future."
+  },
+  "Vission":{
+    "title": "Our Vision",
+    "title1": "Empower",
+    "title2": "Education",
+    "title3": "Sustain",
+    "context1": "We aim to provide underprivileged communities, especially children, with the tools and opportunities to create change in their lives through education and skills development.",
+    "context2": "We focus on providing access to quality education in STEM and digital literacy, as education is key to creating lasting positive impacts.",
+    "context3": "We are committed to ensuring that the positive changes we create are long-lasting, fostering continued growth and development for future generations."
+  },
+  "SlideTitle":{
+    "title1": "About AUPP CCSP",
+    "title2": "About Team"
+  },
+  "Team":{
+    "title": "Leadership Team: AUPP CCSP",
+    "description": "Meet the dedicated leadership team behind AUPP CCSP, driving our mission to empower communities through education and sustainable development."
+  },
+  "Contact":{
+    "badge": "Contact us",
+    "title": "Let's Get In Touch",
+    "des": "Ready to start a conversation? We're here to help and answer any questions you might have."
+  },
+  "Projects":{
+    "title": "AUPP CCSP Projects",
+    "des": "Highlighting the diverse projects organized by student clubs, dedicated to connecting knowledge with community service."
+  },
+  "Btn":{
+    "seemore": "See more"
   }
 }

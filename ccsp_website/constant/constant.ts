@@ -1,11 +1,17 @@
 import { Users, BookOpen, Lightbulb, Globe, HandHeart, GraduationCap } from "lucide-react";
 
+
 // ------------------- Types -------------------
 export interface NavLink {
   id: number;
   url: string;
   label: string;
   children?: { id: number; url: string; label: string }[];
+}
+export interface FooterLinks {
+  id: number;
+  url: string;
+  label: string;
 }
 
 export interface Feature {
@@ -18,6 +24,7 @@ export interface HeroSlide {
   src: string;
   title: string;
   description: string;
+  href: string;
 }
 export interface Projects {
   src: string;
@@ -46,7 +53,6 @@ export interface CardVission {
 export interface SocialLinksType{
   facebook: string;
   instagram: string;
-  linkedin: string;
 }
 export interface TeamMember{
   name: string;
@@ -57,24 +63,28 @@ export interface TeamMember{
 }
 // ------------------- Navigation Links -------------------
 export const NavLinks: NavLink[] = [
-  { id: 1, url: "", label: "Home" },
-  { id: 2, url: "about", label: "About",
+  { id: 1, url: "", label: "home" },
+  {
+    id: 2,
+    url: "about",
+    label: "about",
     children: [
-    { id: 1, url: "about/about-us", label: "About CCSP" },
-    { id: 2, url: "about/about-team", label: "About Team" },
+      { id: 1, url: "about/about-us", label: "about-ccsp" },
+      { id: 2, url: "about/about-team", label: "about-team" },
     ],
   },
-  { id: 3, url: "projects", label: "Projects"},
-  { id: 4, url: "contact", label: "Contact" },
+  { id: 3, url: "projects", label: "projects" },
+  { id: 4, url: "contact", label: "contact" },
 ];
+
 
 
 // ------------------- Features -------------------
 export const Features: Feature[] = [
-  { icon: BookOpen, text: "STEM Education", color: "text-blue-600" },
-  { icon: Globe, text: "English Language", color: "text-green-600" },
-  { icon: Lightbulb, text: "Critical Thinking", color: "text-yellow-600" },
-  { icon: Users, text: "Community Focus", color: "text-purple-600" },
+  { icon: BookOpen, text: "card1", color: "text-blue-600" },
+  { icon: Globe, text: "card2", color: "text-green-600" },
+  { icon: Lightbulb, text: "card3", color: "text-yellow-600" },
+  { icon: Users, text: "card4", color: "text-purple-600" },
 ];
 
 // ------------------- Hero Slides -------------------
@@ -83,11 +93,19 @@ export const heroSlides: HeroSlide[] = [
     src: "/images/home/homepage1.png",
     title: "Stem4Change",
     description: "Students engaging in hands-on STEM activities",
+    href: "/projects/stem",
   },
   {
     src: "/images/home/homepage2.png",
     title: "Community Impact",
     description: "Making a difference in our community",
+    href: "/projects/ncic",
+  },
+    {
+    src: "/images/carousel/carousel1.png",
+    title: "CyberAI",
+    description: "Enhance technology to young generation",
+    href: "/projects/ncic",
   },
 ];
 
@@ -176,7 +194,6 @@ export const advisor: TeamMember[] = [
     social: {
       facebook: "https://www.facebook.com/hak.danet.7",
       instagram: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw==",
-      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
     },
   },
 ]
@@ -189,7 +206,6 @@ export const leaders: TeamMember[] = [
     social: {
       facebook: "https://www.facebook.com/leaksmiii",
       instagram: "https://www.instagram.com/l34k5m111?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
     },
   },
   {
@@ -200,7 +216,6 @@ export const leaders: TeamMember[] = [
     social: {
       facebook: "https://www.facebook.com/leam.sreypich.5",
       instagram: "https://www.instagram.com/h_orang.hae?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
     },
   },
 ]
@@ -213,7 +228,6 @@ export const member: TeamMember[] = [
     social: {
       facebook: "https://www.facebook.com/chhay.chanboromey",
       instagram: "https://www.instagram.com/iamboromey?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
     },
   },
   {
@@ -224,7 +238,6 @@ export const member: TeamMember[] = [
     social: {
       facebook: "https://www.facebook.com/XBangZeX",
       instagram: "https://www.instagram.com/xbangzex/?utm_source=ig_web_button_share_sheet",
-      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
     },
   },
   {
@@ -235,7 +248,6 @@ export const member: TeamMember[] = [
     social: {
       facebook: "https://www.facebook.com/dana.974245/",
       instagram: "https://www.instagram.com/__danaaaa__/",
-      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
     },
   },
   {
@@ -246,7 +258,6 @@ export const member: TeamMember[] = [
     social: {
       facebook: "https://www.facebook.com/na.rak.459263",
       instagram: "https://www.instagram.com/narak_03?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
     },
   },
   {
@@ -256,8 +267,15 @@ export const member: TeamMember[] = [
     image: "/images/team/member-visal.png",
     social: {
       facebook: "https://www.facebook.com/share/1FzonyxWBm/",
-      instagram: "https://www.instagram.com/sal_is_sleepy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      linkedin: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw=="
+      instagram: "https://www.instagram.com/svisal._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
   },
 ]
+
+export const footerLinks: FooterLinks[] = [
+  { id: 1, url: "", label: "home" },
+  { id: 2, url: "about/about-us", label: "about-ccsp" },
+  { id: 3, url: "about/about-team", label: "about-team" },
+  { id: 4, url: "projects", label: "projects" },
+  { id: 5, url: "contact", label: "contact" },
+];

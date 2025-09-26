@@ -2,8 +2,10 @@ import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 const AboutClub = () => {
+  const t = useTranslations("AboutPage");
   return (
     <div className="relative overflow-hidden">
 
@@ -21,9 +23,9 @@ const AboutClub = () => {
           <div className="space-y-6">
             <div className="relative">
               <h1 data-aos="fade-up" className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
-                <span className="text-white bg-clip-text ">About</span>
+                <span className="text-white bg-clip-text ">{t("title")}</span>
                 <br />
-                <span className="text-white bg-clip-text">CCSP</span>
+                <span className="text-white bg-clip-text">AUPP CCSP</span>
               </h1>
             </div>
           </div>
@@ -40,12 +42,7 @@ const AboutClub = () => {
                   <span className="font-bold text-[#B22234] bg-white/10 px-2 py-1 rounded-md border border-[#B22234]/30">
                     (CCSP)
                   </span>{" "}
-                  at the American University of Phnom Penh (AUPP) is a
-                  student-led initiative committed to fostering social
-                  responsibility and community engagement. Our mission is to
-                  bridge academic learning with real-world impact, empowering
-                  students to make meaningful contributions to Cambodian society
-                  through a range of community-driven projects.
+                  {t("content")}
                 </p>
 
                 <Link href="/about/about-us">
@@ -53,7 +50,7 @@ const AboutClub = () => {
                     variant="ghost"
                     className="bg-[#B22234]/60 w-35 h-full p-4 rounded-full text-base"
                   >
-                    See more
+                    {t("btn")}
                     <ArrowRight />
                   </Button>
                 </Link>

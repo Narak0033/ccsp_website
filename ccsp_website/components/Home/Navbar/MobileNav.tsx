@@ -6,6 +6,7 @@ import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { NavLinks as LINKS } from "@/constant/constant";
 import { ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface Props {
   currentLang: "en" | "km";
@@ -14,8 +15,9 @@ interface Props {
 export default function MobileNav({ currentLang }: Props) {
   const [open, setOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
-
+  const t = useTranslations("Navbar");
   return (
+    
     <div className="lg:hidden flex items-center">
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
@@ -31,7 +33,7 @@ export default function MobileNav({ currentLang }: Props) {
                     className="flex justify-between items-center text-lg font-medium w-full "
                     onClick={() => setAboutOpen(!aboutOpen)}
                   >
-                    {link.label}
+                    {t(link.label)}
                     <ChevronDown className={`w-4 h-4 transition-transform ${aboutOpen ? "rotate-180" : ""}`} />
                   </button>
                   {aboutOpen &&
@@ -43,7 +45,7 @@ export default function MobileNav({ currentLang }: Props) {
                         className="ml-4 mt-4 text-base font-normal"
                         onClick={() => setOpen(false)}
                       >
-                        {child.label}
+                        {t(child.label)}
                       </Link>
                     ))}
                 </div>
@@ -54,7 +56,7 @@ export default function MobileNav({ currentLang }: Props) {
                   className="text-lg font-medium]"
                   onClick={() => setOpen(false)}
                 >
-                  {link.label}
+                  {t(link.label)}
                 </Link>
               )
             )}

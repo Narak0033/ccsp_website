@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslations } from "next-intl";
+
 
 const AboutCCSP = () => {
+const t = useTranslations("AboutClub");
   return (
     <section className='my-24'>
         <div data-aos="fade-up" className="container relative z-10">
@@ -15,9 +18,9 @@ const AboutCCSP = () => {
                     <div className='flex items-center justify-center'>
                         <div className="bg-[#0f142ed9] backdrop-blur-sm rounded-xl p-8 shadow-lg border border-gray-700 hover:shadow-xl transition-shadow duration-300">
                             <p className='text-lg leading-relaxed text-center max-w-5xl text-white'>
-                                The Committee for Community Service Program (CCSP) at the American University of Phnom Penh (AUPP) is a student-led initiative committed to fostering social responsibility and community engagement. Our mission is to bridge academic learning with real-world impact, empowering students to make meaningful contributions to Cambodian society through a range of community-driven projects.
+                                The Committee for Community Service Program (CCSP) {t("title1")}
                                 <br /><br />
-                                Our initiatives address pressing social issues, providing students with valuable hands-on experiences. By applying their knowledge in practical ways, students are able to create positive change within their communities.
+                            {t("title2")}
                             </p>
                         </div>
                     </div>

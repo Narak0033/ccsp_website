@@ -6,9 +6,11 @@ import Image from "next/image";
 import { Calendar, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import { projects, Projects } from "@/constant/constant"; 
+import { projects, Projects } from "@/constant/projects";
+import { useTranslations } from "next-intl";
 
 const ProjectCard: React.FC = () => {
+  const t = useTranslations();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:px-2 lg:px-0">
       {projects.map((project: Projects, idx: number) => (
@@ -41,7 +43,7 @@ const ProjectCard: React.FC = () => {
             </div>
 
             <h4 className="text-lg font-semibold text-white leading-relaxed group-hover:text-blue-100 transition-colors duration-200 line-clamp-2">
-              {project.title}
+               {t(project.titleKey)}
             </h4>
 
             <Button 
@@ -49,7 +51,7 @@ const ProjectCard: React.FC = () => {
               className="w-full bg-gradient-to-r from-gray-700 to-gray-600 text-white border-0 rounded-lg py-3 font-medium transition-all duration-300 hover:from-white hover:to-gray-100 hover:text-black hover:shadow-lg group/btn"
             >
               <Link href={project.href} className="flex items-center justify-center gap-2">
-                <span>Read More</span>
+                <span>{t("FeatureProject.btn")}</span>
                 <ArrowRight 
                   size={16} 
                   className="transition-transform duration-300 group-hover/btn:translate-x-1" 

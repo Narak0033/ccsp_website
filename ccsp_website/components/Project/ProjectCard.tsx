@@ -6,12 +6,14 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { CardData } from "@/lib/getProjectsForCards";
+import { useTranslations } from "next-intl";
 
 interface ProjectCardProps {
   projects: CardData[];
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ projects }) => {
+     const t = useTranslations("Btn");
   return (
     <div className="grid grid-cols-1 gap-6 md:px-8 lg:px-0">
       {projects.map((project, idx) => (
@@ -45,8 +47,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projects }) => {
             <Link
               href={project.href}
               className="group inline-flex items-center text-[#B22234] hover:underline font-medium"
-            >
-              See more
+            >{t("seemore")}
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

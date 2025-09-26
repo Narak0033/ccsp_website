@@ -37,7 +37,8 @@ export default async function LocaleLayout(props: {
 
   return (
     <html lang={locale} className={`${latin.variable} ${khmer.variable}`}>
-      <body className="font-sans">
+      <body className="font-sans"style={{
+    fontFamily: "var(--font-kantumruy)", }}>
         <NextIntlClientProvider>
           <AOSProvider>
           <Nav />
