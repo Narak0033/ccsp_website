@@ -14,7 +14,7 @@ export interface Blog {
 
 // Get all projects for a locale
 export function getAllProjects(locale: "en" | "km"): Blog[] {
-  const dirPath = path.resolve("./content", locale); // always resolve from root
+  const dirPath = path.join(process.cwd(), "content", locale);
   if (!fs.existsSync(dirPath)) {
     throw new Error(`Locale folder not found: ${dirPath}`);
   }
@@ -43,7 +43,7 @@ export function getAllProjects(locale: "en" | "km"): Blog[] {
 export function getProject(locale: "en" | "km", project: string): Blog {
   if (!locale || !project) throw new Error("Missing locale or project");
 
-  const filePath = path.resolve("./content", locale, `${project}.md`);
+  const filePath = path.join(process.cwd(), "content", locale, `${project}.md`);
   if (!fs.existsSync(filePath)) {
     throw new Error(`Markdown file not found: ${filePath}`);
   }
