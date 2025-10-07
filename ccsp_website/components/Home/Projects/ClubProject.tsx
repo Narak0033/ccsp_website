@@ -30,7 +30,7 @@ const ClubProject = () => {
  
         <div className='my-14 items-center justify-center flex'>
         <Link href="/projects">
-          <Button variant="ghost" className="bg-[#B22234]/60 w-55 h-full  p-4 rounded-full text-base">
+          <Button variant="ghost" className="bg-[#B22234]/60 w-55 h-full  p-4 rounded-full text-base cursor-pointer">
             {t('btnAll')} <ChevronRightIcon />
           </Button>
         </Link>

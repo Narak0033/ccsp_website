@@ -46,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projects }) => {
             <p className="text-md text-white/80 line-clamp-2">{project.description}</p>
             <Link
               href={project.href}
-              className="group inline-flex items-center text-[#B22234] hover:underline font-medium"
+              className="group inline-flex items-center text-[#B22234] hover:underline font-medium cursor-pointer"
             >{t("seemore")}
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>

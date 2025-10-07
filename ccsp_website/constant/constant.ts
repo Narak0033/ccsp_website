@@ -14,18 +14,9 @@ export interface FooterLinks {
   label: string;
 }
 
-export interface Feature {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-  text: string;
-  color: string;
-}
 
-export interface HeroSlide {
-  src: string;
-  title: string;
-  description: string;
-  href: string;
-}
+
+
 export interface Projects {
   src: string;
   tag: string;
@@ -77,37 +68,6 @@ export const NavLinks: NavLink[] = [
   { id: 4, url: "contact", label: "contact" },
 ];
 
-
-
-// ------------------- Features -------------------
-export const Features: Feature[] = [
-  { icon: BookOpen, text: "card1", color: "text-blue-600" },
-  { icon: Globe, text: "card2", color: "text-green-600" },
-  { icon: Lightbulb, text: "card3", color: "text-yellow-600" },
-  { icon: Users, text: "card4", color: "text-purple-600" },
-];
-
-// ------------------- Hero Slides -------------------
-export const heroSlides: HeroSlide[] = [
-  {
-    src: "/images/home/homepage1.png",
-    title: "Stem4Change",
-    description: "Students engaging in hands-on STEM activities",
-    href: "/projects/stem",
-  },
-  {
-    src: "/images/home/homepage2.png",
-    title: "Community Impact",
-    description: "Making a difference in our community",
-    href: "/projects/ncic",
-  },
-    {
-    src: "/images/carousel/carousel1.png",
-    title: "CyberAI",
-    description: "Enhance technology to young generation",
-    href: "/projects/ncic",
-  },
-];
 
 export const projects: Projects[] = [
   {
@@ -199,7 +159,7 @@ export const advisor: TeamMember[] = [
 ]
 export const leaders: TeamMember[] = [
   {
-    name: "Chanrithlaksmey Chhoeth",
+    name: "Chhoeth Chanrithlaksmey",
     role: "Leader",
     major: "Cybersecurity",
     image: "/images/team/leader-smi.png",
@@ -209,7 +169,7 @@ export const leaders: TeamMember[] = [
     },
   },
   {
-    name: "Sreypich Leam",
+    name: "Leam Sreypich",
     role: "Co Leader",
     major: "Cybersecurity",
     image: "/images/team/leader-pich.png",
@@ -221,7 +181,7 @@ export const leaders: TeamMember[] = [
 ]
 export const member: TeamMember[] = [
   {
-    name: "Chanboromey Chhay",
+    name: "Chhay Chanboromey",
     role: "Officer",
     major: "Computer Science",
     image: "/images/team/member-mey.png",
@@ -231,7 +191,7 @@ export const member: TeamMember[] = [
     },
   },
   {
-    name: "CHING CHOU KEO",
+    name: "Keo Ching Chou",
     role: "Officer",
     major: "Computer Science",
     image: "/images/team/member-chou.png",
@@ -241,7 +201,7 @@ export const member: TeamMember[] = [
     },
   },
   {
-    name: "Lydana Tan",
+    name: "Tan Lydana",
     role: "Officer",
     major: "Software Development",
     image: "/images/team/member-dana.png",
@@ -251,7 +211,7 @@ export const member: TeamMember[] = [
     },
   },
   {
-    name: "Narak Horn",
+    name: "Horn Narak",
     role: "Officer",
     major: "Digital Infrastructure",
     image: "/images/team/member-narak.png",
@@ -261,7 +221,7 @@ export const member: TeamMember[] = [
     },
   },
   {
-    name: "Visal Hor",
+    name: "Hor Visal",
     role: "Officer",
     major: "Computer Science",
     image: "/images/team/member-visal.png",

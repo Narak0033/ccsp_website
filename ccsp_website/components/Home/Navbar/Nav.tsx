@@ -55,7 +55,7 @@ const Nav = () => {
           link.children ? (
             <DropdownMenu key={link.id}>
               <DropdownMenuTrigger asChild>
-                <Button className="flex items-center gap-2 text-base font-medium bg-transparent hover:bg-transparent">
+                <Button className="flex items-center gap-2 text-base font-medium bg-transparent hover:bg-transparent cursor-pointer">
                   {t(link.label)} <ChevronDown className="w-5 h-5" />
                 </Button>
               </DropdownMenuTrigger>

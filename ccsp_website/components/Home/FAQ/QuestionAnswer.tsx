@@ -96,7 +96,7 @@ const QuestionAnswer = () => {
             <Link href="/contact">
               <Button
                 variant="ghost"
-                className="bg-[#B22234]/60 w-45 h-full p-4 rounded-full text-base"
+                className="bg-[#B22234]/60 w-45 h-full p-4 rounded-full text-base cursor-pointer"
               >
                 <SquareUser /> {t("btn")}
               </Button>

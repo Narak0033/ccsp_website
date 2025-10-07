@@ -48,7 +48,7 @@ const AboutClub = () => {
                 <Link href="/about/about-us">
                   <Button
                     variant="ghost"
-                    className="bg-[#B22234]/60 w-35 h-full p-4 rounded-full text-base"
+                    className="bg-[#B22234]/60 w-35 h-full p-4 rounded-full text-base cursor-pointer"
                   >
                     {t("btn")}
                     <ArrowRight />
