@@ -17,11 +17,6 @@ const Hero: React.FC = () => {
   
   return (
   <section className="mt-20 lg:mt-0 lg:min-h-screen lg:flex lg:items-center lg:justify-center">      
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-      </div>
 
       <div className="container max-w-7xl mx-auto px-4 text-center relative z-10 py-20">
         
