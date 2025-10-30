@@ -2,13 +2,13 @@
 title: "ប្រធានបទ STEM4Change: បំផុសគំនិតសិស្សខេត្តតាកែវ តាមរយៈការរៀនដោយផ្ទាល់"
 date: "៣-៤ មករា ២០២៥"
 author: "CCSP Team"
-featuredImage: "/images/home/homepage1.png"
+featuredImage: "/images/home/homepage1.webp"
 galleryImages:
-  - "/images/blog/stem1.png"
-  - "/images/blog/stem2.png"
-  - "/images/blog/stem3.png"
-  - "/images/blog/stem4.png"
-  - "/images/blog/stem5.png"
+  - "/images/blog/stem1.webp"
+  - "/images/blog/stem2.webp"
+  - "/images/blog/stem3.webp"
+  - "/images/blog/stem4.webp"
+  - "/images/blog/stem5.webp"
 ---
 
  (តាកែវ) ៖ AUPP CCSP បានដឹកនាំគម្រោង Stem4Change ប្រកបដោយមោទនភាព ដែលជាគំនិតផ្តួចផ្តើមសេវាកម្មសហគមន៍ ដែលបានបំផុសគំនិតសិស្ស៩០នាក់នៅសាលាសហគមន៍ I see I do ក្នុងខេត្តតាកែវ!តាមរយៈសិក្ខាសាលា STEM ដោយផ្ទាល់ដៃស្តីពីអនាម័យទឹក ការគ្រប់គ្រងកាកសំណល់បច្ចេកវិទ្យាមូលដ្ឋាន និងការរៀបចំថវិកា អង្គការ C CCSP បានជួយបណ្តុះជំនាញជាក់ស្តែង និងទំនុកចិត្តក្នុងការដោះស្រាយបញ្ហាក្នុងចំណោមសិស្ស។

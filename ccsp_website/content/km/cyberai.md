@@ -2,13 +2,13 @@
 title: "ប្រធានបទ CyberAI : ការបង្រៀនជំនាញ Cybersecurity & AI Skills ទៅកាន់សិស្សានុសិស្ស"
 date: "សីហា កញ្ញា ២០២៥"
 author: "CCSP Team"
-featuredImage: "/images/blog/cyberai.png"
+featuredImage: "/images/blog/cyberai.webp"
 galleryImages:
-  - "/images/blog/cyberai1.jpg"
-  - "/images/blog/cyberai2.png"
-  - "/images/blog/cyberai3.jpg"
-  - "/images/blog/cyberai4.jpg"
-  - "/images/blog/cyberai5.jpg"
+  - "/images/blog/cyberai1.webp"
+  - "/images/blog/cyberai2.webp"
+  - "/images/blog/cyberai3.webp"
+  - "/images/blog/cyberai4.webp"
+  - "/images/blog/cyberai5.webp"
 ---
 
  (ភ្នំពេញ) ៖ បន្ទាប់ពីរយៈពេលប្រាំមួយសប្តាហ៍នៃការបណ្តុះបណ្តាល និងការសហការ អ្នកស្ម័គ្រចិត្តរបស់យើងមកពីក្រុមទី1 Cohort 1បានបញ្ចប់ដោយជោគជ័យនូវសេវាកម្ម Cyberai Explorer នៅ Neeson Cripps Academy នៅថ្ងៃទី27ខែសីហា និងថ្ងៃទី3ខែកញ្ញា ដោយបានឧទ្ទិសដល់ថ្ងៃពុធចំនួនពីរចំពោះគំនិតផ្តួចផ្តើមនេះ។

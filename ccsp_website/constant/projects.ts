@@ -9,7 +9,7 @@ export interface Projects {
 
 export const projects: Projects[] = [
   {
-    src: "/images/logo/stem.png",
+    src: "/images/logo/stem.webp",
     tag: "STEM",
     readableDate: "3-4 Jan 2025",
     titleKey: "FeatureProject.projects.0.title",
@@ -17,7 +17,7 @@ export const projects: Projects[] = [
     href: "/projects/stem",
   },
   {
-    src: "/images/logo/ncic.png",
+    src: "/images/logo/ncic.webp",
     tag: "Community Service",
     readableDate: "April 6 2025",
     titleKey: "FeatureProject.projects.1.title",
@@ -25,7 +25,7 @@ export const projects: Projects[] = [
     href: "/projects/ncic",
   },
   {
-    src: "/images/logo/cyberai.png",
+    src: "/images/logo/cyberai.webp",
     tag: "CyberAI",
     readableDate: "Aug-September 2025",
     titleKey: "FeatureProject.projects.2.title",

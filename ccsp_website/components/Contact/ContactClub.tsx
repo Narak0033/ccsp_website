@@ -18,7 +18,7 @@ const ContactClub = () => {
           <p className="subtext max-w-xl">
             {t("des")}
           </p>
-          <Image src="/images/contacts/contact.png" alt="contact" width={400} height={400} />
+          <Image src="/images/contacts/contact.webp" alt="contact" width={400} height={400} />
         </div>
         <FormFill />
       </div>

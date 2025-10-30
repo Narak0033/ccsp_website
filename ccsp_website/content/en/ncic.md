@@ -2,12 +2,12 @@
 title: "Spreading Care: CCSP’s Donation Drive for Children in Need"
 date: "6 April 2025"
 author: "Write by: Advisor"
-featuredImage: "/images/blog/ncic.jpg"
+featuredImage: "/images/blog/ncic.webp"
 galleryImages:
-  - "/images/blog/ncic1.jpg"
-  - "/images/blog/ncic2.jpg"
-  - "/images/blog/ncic3.jpg"
-  - "/images/blog/ncic4.jpg"
+  - "/images/blog/ncic1.webp"
+  - "/images/blog/ncic2.webp"
+  - "/images/blog/ncic3.webp"
+  - "/images/blog/ncic4.webp"
 ---
 
 (Phnom Penh) : On April 6, 2025, our Committee for Community Services Program team, together with students from the Environmental Sciences class and colleagues from Bridge Bank, delivered donations to the National Center for Infants and Children.

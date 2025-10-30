@@ -65,7 +65,7 @@ const QuestionAnswer = () => {
           aria-labelledby="faq-image-caption"
         >
           <Image
-            src="/images/home/FAQs-amico.png"
+            src="/images/home/FAQs-amico.webp"
             alt="Frequently Asked Questions illustration"
             width={350}
             height={350}

@@ -2,12 +2,12 @@
 title: "ចែករំលែកក្តីស្រលាញ់: ការបរិច្ចាគរបស់ AUPP CCSP ទៅកាន់កុមារដែលត្រូវការ"
 date: "៦ មេសា ២០២៥"
 author: "អត្ថបទដោយ: Advisor"
-featuredImage: "/images/blog/ncic.jpg"
+featuredImage: "/images/blog/ncic.webp"
 galleryImages:
-  - "/images/blog/ncic1.jpg"
-  - "/images/blog/ncic2.jpg"
-  - "/images/blog/ncic3.jpg"
-  - "/images/blog/ncic4.jpg"
+  - "/images/blog/ncic1.webp"
+  - "/images/blog/ncic2.webp"
+  - "/images/blog/ncic3.webp"
+  - "/images/blog/ncic4.webp"
 ---
 
  (ភ្នំពេញ) ៖ នៅថ្ងៃទី៦ខែមេសា ឆ្នាំ២០២៥ ក្រុមការងារកម្មវិធី គណៈកម្មាធិការសេវាសហគមន៍របស់យើង រួមជាមួយសិស្សមកពីថ្នាក់វិទ្យាសាស្ត្របរិស្ថាន និងសហការីមកពីធនាគារប្រ៊ីដ បាននាំយកអំណោយជូនដល់មជ្ឈមណ្ឌលទារក និងកុមារជាតិ។

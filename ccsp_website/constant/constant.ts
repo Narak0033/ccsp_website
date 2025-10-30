@@ -71,7 +71,7 @@ export const NavLinks: NavLink[] = [
 
 export const projects: Projects[] = [
   {
-    src: "/images/logo/stem.png",
+    src: "/images/logo/stem.webp",
     tag: "STEM",
     readableDate: "3-4 Jan 2025",
     title:
@@ -81,7 +81,7 @@ export const projects: Projects[] = [
     href: "/projects/stem",
   },
   {
-    src: "/images/logo/ncic.png",
+    src: "/images/logo/ncic.webp",
     tag: "Community Service",
     readableDate: "April 6 2025",
     title:
@@ -91,7 +91,7 @@ export const projects: Projects[] = [
     href: "/projects/stem",
   },
   {
-    src: "/images/logo/cyberai.png",
+    src: "/images/logo/cyberai.webp",
     tag: "CyberAI",
     readableDate: "Aug-September 2025",
     title:
@@ -105,20 +105,20 @@ export const projects: Projects[] = [
 export const socialLink: SocialMedia[] = [
   {
       href: "https://www.facebook.com/profile.php?id=61566459083009",
-      src:  "/images/media-logo/fb.png",
+      src:  "/images/media-logo/fb.webp",
       label: "Facebook",
     },
     {
       href: "https://www.instagram.com/aupp_ccsp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-       src:  "/images/media-logo/ig.png",
+       src:  "/images/media-logo/ig.webp",
       label: "Instagram",
     },
 ];
 
 export const slide: AboutCarousel[] =[
-  { src: "/images/carousel/carousel1.png" },
-  { src: "/images/carousel/carousel2.png" },
-  { src: "/images/carousel/carousel3.png" }
+  { src: "/images/carousel/carousel1.webp" },
+  { src: "/images/carousel/carousel2.webp" },
+  { src: "/images/carousel/carousel3.webp" }
 ]
 
 export const cards: CardVission[] = [
@@ -150,7 +150,7 @@ export const advisor: TeamMember[] = [
     name: "Dr. Danet Hak",
     role: "Advisor",
     major: "Liberal Arts and Sciences",
-    image: "/images/team/advisor-danet.png",
+    image: "/images/team/advisor-danet.webp",
     social: {
       facebook: "https://www.facebook.com/hak.danet.7",
       instagram: "https://www.instagram.com/hakdanet.7?igsh=MTYxZ3RtbWk1NnNxdw==",
@@ -162,7 +162,7 @@ export const leaders: TeamMember[] = [
     name: "Chhoeth Chanrithlaksmey",
     role: "Leader",
     major: "Cybersecurity",
-    image: "/images/team/leader-smi.png",
+    image: "/images/team/leader-smi.webp",
     social: {
       facebook: "https://www.facebook.com/leaksmiii",
       instagram: "https://www.instagram.com/l34k5m111?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
@@ -172,7 +172,7 @@ export const leaders: TeamMember[] = [
     name: "Leam Sreypich",
     role: "Co Leader",
     major: "Cybersecurity",
-    image: "/images/team/leader-pich.png",
+    image: "/images/team/leader-pich.webp",
     social: {
       facebook: "https://www.facebook.com/leam.sreypich.5",
       instagram: "https://www.instagram.com/h_orang.hae?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
@@ -184,7 +184,7 @@ export const member: TeamMember[] = [
     name: "Chhay Chanboromey",
     role: "Officer",
     major: "Computer Science",
-    image: "/images/team/member-mey.png",
+    image: "/images/team/member-mey.webp",
     social: {
       facebook: "https://www.facebook.com/chhay.chanboromey",
       instagram: "https://www.instagram.com/iamboromey?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
@@ -194,7 +194,7 @@ export const member: TeamMember[] = [
     name: "Keo Ching Chou",
     role: "Officer",
     major: "Computer Science",
-    image: "/images/team/member-chou.png",
+    image: "/images/team/member-chou.webp",
     social: {
       facebook: "https://www.facebook.com/XBangZeX",
       instagram: "https://www.instagram.com/xbangzex/?utm_source=ig_web_button_share_sheet",
@@ -204,7 +204,7 @@ export const member: TeamMember[] = [
     name: "Tan Lydana",
     role: "Officer",
     major: "Software Development",
-    image: "/images/team/member-dana.png",
+    image: "/images/team/member-dana.webp",
     social: {
       facebook: "https://www.facebook.com/dana.974245/",
       instagram: "https://www.instagram.com/__danaaaa__/",
@@ -214,7 +214,7 @@ export const member: TeamMember[] = [
     name: "Horn Narak",
     role: "Officer",
     major: "Digital Infrastructure",
-    image: "/images/team/member-narak.png",
+    image: "/images/team/member-narak.webp",
     social: {
       facebook: "https://www.facebook.com/na.rak.459263",
       instagram: "https://www.instagram.com/narak_03?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
@@ -224,7 +224,7 @@ export const member: TeamMember[] = [
     name: "Hor Visal",
     role: "Officer",
     major: "Computer Science",
-    image: "/images/team/member-visal.png",
+    image: "/images/team/member-visal.webp",
     social: {
       facebook: "https://www.facebook.com/share/1FzonyxWBm/",
       instagram: "https://www.instagram.com/svisal._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",

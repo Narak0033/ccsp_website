@@ -40,7 +40,7 @@ const Nav = () => {
         {/* Logo */}
         <div className="flex-shrink-0">
           <Image
-            src="/images/logo/main-logo.png"
+            src="/images/logo/main-logo.webp"
             alt="logo"
             width={150}
             height={200}

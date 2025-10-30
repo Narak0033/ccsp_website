@@ -22,7 +22,7 @@ const AboutMission = () => {
 
         <div className="flex justify-center items-center">
           <Image
-            src="/images/about/mission.png"
+            src="/images/about/mission.webp"
             alt="Mission illustration"
             width={350}
             height={350}

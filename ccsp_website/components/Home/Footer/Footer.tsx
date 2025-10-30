@@ -22,7 +22,7 @@ const Footer = () => {
         {/* Main Logo + About - Centered on mobile */}
         <div className="flex flex-col items-center md:items-start space-y-2">
           <Image
-            src="/images/logo/main-logo.png"
+            src="/images/logo/main-logo.webp"
             alt="CCSP Logo"
             width={200}
             height={150}
@@ -77,14 +77,14 @@ const Footer = () => {
           <h3 className="text-lg font-semibold  text-white">{t("spp")}</h3>
           <div className="flex gap-4 items-center">
             <Image
-              src="/images/logo/AUPP_logo.png"
+              src="/images/logo/AUPP_logo.webp"
               alt="AUPP Logo"
               width={50}
               height={50}
               style={{ width: "auto", height: "auto" }}
             />
             <Image
-              src="/header-logo.png"
+              src="/header-logo.webp"
               alt="AUPP Logo"
               width={50}
               height={50}

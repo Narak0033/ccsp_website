@@ -20,7 +20,7 @@ export default function ProjectDetail({ post }: ProjectDetailProps) {
   {/* Sidebar */}
   <aside className="lg:sticky hidden lg:block">
     <Image
-      src="/images/logo/official-logo.png"
+      src="/images/logo/official-logo.webp"
       alt="main-logo"
       width={320}
       height={320}

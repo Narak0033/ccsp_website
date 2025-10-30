@@ -20,8 +20,8 @@ const languages = {
 type Language = keyof typeof languages;
 
 const languageAssets: Record<Language, { label: string; flag: string }> = {
-  en: { label: "English", flag: "/images/flags/eng.png" },
-  km: { label: "ភាសាខ្មែរ", flag: "/images/flags/kh.png" },
+  en: { label: "English", flag: "/images/flags/eng.webp" },
+  km: { label: "ភាសាខ្មែរ", flag: "/images/flags/kh.webp" },
 };
 
 export default function LanguageSwitcher({ currentLang }: { currentLang: Language }) {

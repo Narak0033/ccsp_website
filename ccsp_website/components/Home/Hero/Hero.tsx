@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-white/20 rounded-sm blur-xl scale-110"></div>
             <Image
-              src="/images/logo/official-logo.png"
+              src="/images/logo/official-logo.webp"
               alt="main-logo"
               width={200}
               height={200}

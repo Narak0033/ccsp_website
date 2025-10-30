@@ -2,13 +2,13 @@
 title: "CyberAI Explorer: Empowering Students with Cybersecurity & AI Skills"
 date: "Aug Sep 2025"
 author: "CCSP Team"
-featuredImage: "/images/blog/cyberai.png"
+featuredImage: "/images/blog/cyberai.webp"
 galleryImages:
-  - "/images/blog/cyberai1.jpg"
-  - "/images/blog/cyberai2.png"
-  - "/images/blog/cyberai3.jpg"
-  - "/images/blog/cyberai4.jpg"
-  - "/images/blog/cyberai5.jpg"
+  - "/images/blog/cyberai1.webp"
+  - "/images/blog/cyberai2.webp"
+  - "/images/blog/cyberai3.webp"
+  - "/images/blog/cyberai4.webp"
+  - "/images/blog/cyberai5.webp"
 ---
 
 (Phnom Penh) : After six weeks of training and collaboration, our volunteers from team 1 Cohort 1 successfully completed the CyberAI Explorer service at Neeson Cripps Academy on 27th August and 3rd September, dedicating two Wednesdays to this initiative.
