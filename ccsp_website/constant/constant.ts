@@ -117,7 +117,6 @@ export const socialLink: SocialMedia[] = [
 
 export const slide: AboutCarousel[] =[
   { src: "/images/carousel/carousel1.webp" },
-  { src: "/images/carousel/carousel2.webp" },
   { src: "/images/carousel/carousel3.webp" }
 ]
 
